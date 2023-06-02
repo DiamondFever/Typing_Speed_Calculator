@@ -13,7 +13,7 @@ def accu(sample_text, input_text):
 
     else:
         for i in range(0,word_count-1):
-            if splited_input_text[i] != splited_sample_text[i]:
+            if splited_input_text[i] == splited_sample_text[i]:
                 correct = correct+1
 
     accuracy = correct*100/word_count
